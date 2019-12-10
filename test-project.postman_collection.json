@@ -1,0 +1,66 @@
+{
+	"info": {
+		"_postman_id": "82344c83-fcfa-4a29-9854-558b5b35c536",
+		"name": "test-project",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Upload file (File system)",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "userFile",
+							"type": "file",
+							"src": []
+						}
+					]
+				},
+				"url": "localhost:3000/api/file"
+			},
+			"response": []
+		},
+		{
+			"name": "Upload File (S3)",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "upl",
+							"type": "file",
+							"src": []
+						}
+					]
+				},
+				"url": "localhost:3000/upload"
+			},
+			"response": []
+		},
+		{
+			"name": "List S3 Files",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "localhost:3000/lists3"
+			},
+			"response": []
+		},
+		{
+			"name": "List System-files",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "localhost:3000/systemfiles"
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
